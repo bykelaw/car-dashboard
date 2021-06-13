@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Dashboar</title>
+  <style>
+    body{
+      padding:0;
+      margin: 0;
+    }
+    main{
+      background-image: url('./images/background.jpg');
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .center{
+      position: fixed;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .center> div{
+          /* color: white; */
+          font-family: sans-serif;
+          font-size: 10rem;
+          text-align: center;
+          word-spacing: -2rem;
+    }
+    .item_2 span,
+    .item_1,
+    .time{
+      color: white;
+        }
+    .item_2{
+      color: #FAD553;
+    }
+    .pressure_val{
+      font-size: 4rem;
+      margin-top: 0; 
+      color: white;
+      font-family: sans-serif;
+    }
+    .time{
+      font-size: 1.1rem;
+      font-family: sans-serif;
+    }
+    .center > div > span{
+      font-size: 2rem;
+      text-align: left;
+    }
+    .water_tmp{
+      display: flex;
+      justify-content: space-between;
+      padding: 6rem 3rem 0 3rem;
+    }
+    .title{
+      font-family: sans-serif;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+
+    }
+    .wt_value{
+      font-size: 4rem;
+      margin: 0; 
+      color: white;
+      font-family: sans-serif;
+    }
+    .sec2{
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0 0;
+      /* background-color: red; */
+    }
+    .weather{
+      width: 10rem;
+      height: 10rem;
+    }
+    .sec3{
+          display: flex;
+          justify-content: space-between;
+          /* background-color: yellow; */
+          width: 100%;
+          position: fixed;
+          height: 13rem;
+          bottom: 0;
+    }
+    .others{
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-end;
+       flex: 1;
+       padding: 0 2rem;
+    }
+     .blt_n_wifi{
+       /* width:100%; */
+     }
+    .blt_n_wifi img{
+      width: 4rem;
+    }
+    .fuel_lev,
+     .battery_lev{
+     /* background-color: red;  */
+     width: 20%;
+     text-align: center;
+    }
+    .pressure{
+      text-align: center;
+      /* background-color: red; */
+      width: 13rem;
+      margin-top: 2rem;
+    }
+    .pressure_val span{
+      font-size: 2rem;
+    }
+    .fuel_lev{
+      margin-top: 4rem;
+    }
+    .battery_lev{
+
+    }
+    .battery_lev>:first-child{
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .battery_gn{
+      color:#3F9056;
+      margin: 0;
+      font-size: 2.4rem; 
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+    .battery_gn:nth-child(3){
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="center">
+      <div class="item_1">
+        3642
+        <span>RPM</span>
+      </div>
+      <div class="item_2">
+        41
+        <span>MPH</span>
+      </div>
+    </div>
+    <div class="water_tmp">
+      <div>
+        <p class="title">WATER TEMP</p>
+        <p class='wt_value'>165</p>
+      </div>
+      <div>
+        <p class="title">WATER TEMP</p>
+        <p class='wt_value'>165</p>
+      </div>
+    </div>
+    <div class="sec2">
+      <img src="./images/weather.png" class="weather" />
+      <div class="pressure" >
+        <p class="title">PRESSURE</p>
+        <p class="pressure_val">42 <span>PSI</span></p>
+      </div>
+  </div>
+    <div class="sec3">
+      <div class="fuel_lev">
+        <p class="title">FUEL LEVEL</p>
+        <p class='wt_value'>22%</p>
+      </div>
+      <div class="others">
+        <p class="time">10:43AM</p>
+        <div class="blt_n_wifi">
+          <img src="./images/wifi.png" alt="wifi">
+          <img src="./images/bluetooth.png" alt="bluetooth">
+        </div>
+      </div>
+     <div class="battery_lev">
+       <p class="title">BATTERY LEVELS</p>
+       <p class="battery_gn"><em>14.2V</em></p>
+       <p class="battery_gn"><em>18.8V</em></p>
+       <p class="battery_gn"><em>14.5V</em></p>
+       <p class="battery_gn"><em>14.4V</em></p>
+     </div>
+  </div>
+  </main>
+</body>
+</html>
